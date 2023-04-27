@@ -31,15 +31,30 @@
       <img id="logo"src="/images/logo.svg" alt="logo icon">
 
       <!-- nav bar -->
-      <img id="hamburger" src="images/icon-hamburger.svg" alt="hamburger-icon">
-
       <nav class="mobile_nav desktop_nav">
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li><span>Contact</span></li>
+        <button class="menu-toggle" onclick="menuToggle()">
+          <img src="images/icon-hamburger.svg" alt="expand menu icon">
+        </button>
+
+        <ul class="nav-links">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
         </ul>
+
+        <!-- <button class=""></button>
+        
+        <label id="hamburger-label"><img src="/images/icon-hamburger.svg" alt="hamburger-menu">
+          <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li><span>Contact</span></li>
+          </ul>
+        </label> -->
+        <!-- <img id="hamburger" src="images/icon-hamburger.svg" alt="hamburger-icon"> -->
       </nav>
 
       <div>
@@ -175,5 +190,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

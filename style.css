@@ -111,34 +111,6 @@ svg {
   position: relative; 
 }
 
-.main_header nav{ 
-  background-color: var(--clr-white); 
-  width: 80%;  
-  height: 60%; 
-  position: absolute; 
-  top: 20%; 
-  left: 10%; 
-  
-  z-index: 2; 
-}
-
-.mobile_nav ul{ 
-  height: 100%; 
-   
-  list-style-type: none; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center; 
-
-  font-family: var(--ff-body); 
-  font-size: var(--fs);
-}
-
-.mobile_nav ul > li{ 
-  margin: 0.5rem; 
-}
-
 .main_header div{  
   color: var(--clr-white); 
   font-family: var(--ff-heading); 
@@ -159,12 +131,6 @@ svg {
   margin: 2rem; 
 }
 
-#hamburger{ 
-  margin: 2rem; 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-}
 
 #arrow_down{ 
   position: absolute; 
@@ -172,6 +138,41 @@ svg {
   left: 45%; 
 }
 
+/* nav bar */
+.menu-toggle{ 
+  background-color: transparent;
+  border: none; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin: 2rem; 
+  cursor: pointer; 
+}
+
+.menu-toggle img{ 
+  width: 20px; 
+  height: 20px; 
+}
+
+.hidden{ 
+  display: none; 
+}
+
+.nav-links{ 
+  font-family: var(--ff-body); 
+  font-weight: var(--fw-semibold); 
+  text-align: center; 
+  list-style: none; 
+  position: absolute; 
+  top: 20%; 
+  left: 15%; 
+  background-color: white; 
+
+  width: 300px; 
+  height: 300px; 
+   
+  z-index: 3; 
+}
 /*section 1 and section 2 container*/
 .section1_container, .section2_container{ 
   height: 400px; 
