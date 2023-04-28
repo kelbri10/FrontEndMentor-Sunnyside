@@ -155,13 +155,14 @@ svg {
 }
 
 .hidden{ 
-  display: none; 
+  visibility: hidden;
 }
 
-.nav-links{ 
+.nav-links{  
   font-family: var(--ff-body); 
+  color: var(--clr-lghtgrayblue); 
   font-weight: var(--fw-semibold); 
-  text-align: center; 
+  
   list-style: none; 
   position: absolute; 
   top: 20%; 
@@ -172,6 +173,26 @@ svg {
   height: 300px; 
    
   z-index: 3; 
+
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links li { 
+  width: 50%; 
+
+  text-align: center; 
+}
+#contact-link{ 
+  font-family: var(--ff-secondary); 
+  text-transform: uppercase; 
+  background-color: var(--clr-yellow);  
+  color: var(--clr-graydarkblue); 
+
+  border-radius: 35px; 
+  padding: 1rem; 
 }
 /*section 1 and section 2 container*/
 .section1_container, .section2_container{ 
