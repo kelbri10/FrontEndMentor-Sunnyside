@@ -208,3 +208,14 @@ footer .socials{
     justify-content: space-between;
     gap: 2rem; 
 }
+
+@media only screen and (min-width: 640px){ 
+    .section__grid{ 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .gallery__container{ 
+        display: flex; 
+    }
+}
