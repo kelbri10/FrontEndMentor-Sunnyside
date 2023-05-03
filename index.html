@@ -20,7 +20,6 @@
   </style>
 </head>
 <body>
-
   <header class="header__container">
     <picture>
       <source media="(min-width: 640px)"srcset="/images/desktop/image-header.jpg">
@@ -44,7 +43,20 @@
   </header>
 
   <div class="section__grid">
-    <section class="transform__container">
+    <picture class="transform__photo">
+      <source media="(min-width: 640px)"srcset="images/desktop/image-transform.jpg" alt="egg on yellow background">
+      <img src="images/mobile/image-transform.jpg" alt="egg on yellow background">
+    </picture>
+    <div class="text__container transform__text">
+      <h2>Transform your brand</h2>
+      <p>
+        We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+  
+    <!-- <section class="transform__container">
       <picture>
         <source media="(min-width: 640px)"srcset="images/desktop/image-transform.jpg" alt="egg on yellow background">
         <img src="images/mobile/image-transform.jpg" alt="egg on yellow background">
@@ -71,7 +83,20 @@
         </p>
         <a href="#">Learn more</a>
       </div>
-    </section>
+    </section> -->
+
+    <picture class="stand-out__photo">
+      <source media="(min-width: 640px)"srcset="images/desktop/image-stand-out.jpg">
+      <img src="images/mobile/image-stand-out.jpg" alt="">
+    </picture>
+    <div class="text__container stand-out__text">
+      <h2>Stand out to the right audience</h2>
+      <p>
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+      </p>
+      <a href="#">Learn more</a>
+    </div>
+  
   
     <section class="graphic__container">
       <picture>
@@ -97,29 +122,36 @@
       </div>
     </section>
   </div>
+  
+
+
+  
 
   <section class="client__wrapper">
     <h2>Client Testimonials</h2>
-    <div class="review__container">
-      <img src="images/image-emily.jpg" alt="">
-      <p class="review__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-      <p class="review__author">Emily R.</p>
-      <p class="review__role">Marketing Director</p>
+    <div class="review__wrapper">
+      <div class="review__container">
+        <img src="images/image-emily.jpg" alt="">
+        <p class="review__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="review__author">Emily R.</p>
+        <p class="review__role">Marketing Director</p>
+      </div>
+  
+      <div class="review__container">
+        <img src="images/image-thomas.jpg" alt="">
+        <p class="review__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="review__author">Thomas S.</p>
+        <p class="review__role">Chief Operating Officer</p>
+      </div>
+  
+      <div class="review__container">
+        <img src="images/image-jennie.jpg" alt="">
+        <p class="review__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="review__author">Jennie F.</p>
+        <p class="review__role">Business Owner</p>
+      </div>
     </div>
-
-    <div class="review__container">
-      <img src="images/image-thomas.jpg" alt="">
-      <p class="review__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-      <p class="review__author">Thomas S.</p>
-      <p class="review__role">Chief Operating Officer</p>
-    </div>
-
-    <div class="review__container">
-      <img src="images/image-jennie.jpg" alt="">
-      <p class="review__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-      <p class="review__author">Jennie F.</p>
-      <p class="review__role">Business Owner</p>
-    </div>
+  
   </section>
 
   <section class="gallery__container">
