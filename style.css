@@ -33,25 +33,19 @@ body{
     position: relative; 
 }
 
-.nav__links, .header__logo, .menu__toggle, .header__container h1{ 
+.header__container h1{ 
     position: absolute; 
 }
 
-.header__logo{ 
-    top: 3rem; 
-    left: 2rem;
-}
 
-.menu__toggle{ 
-    top: 3rem; 
-    right: 2rem;  
+.menu__toggle{   
     background-color: transparent;
     border: none; 
     cursor: pointer;  
 }
 
 
-.header__container h1, .nav__links{ 
+.header__container h1{ 
     top: 40%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
@@ -65,31 +59,49 @@ body{
     font-size: 3rem; 
 }
 
-.nav__links{ 
-    z-index: 4; 
-    display: none; 
-}
-
-/* .nav__links ul{ 
-    list-style: none; 
-    background-color: var(--clr-white);
-    padding: 5rem 7rem; 
-    text-align: center; 
-}
-
-.nav__links ul > li{ 
-    padding: 1rem; 
-}
-.nav__links ul > li > a{ 
-    text-decoration: none;
-}
- */
-
 .header__container h1{ 
     font-family: var(--ff-heading); 
     text-align: center; 
     color: var(--clr-white); 
 }
+
+/*nav bar styles*/
+.active{ 
+    position: absolute; 
+    top: 50%; 
+    
+    margin: 10rem; 
+
+    list-style: none; 
+    text-align: center; 
+    
+    
+    width: 50%; 
+    padding: 6rem; 
+
+    background-color: var(--clr-white); 
+    z-index: 6; 
+}
+
+.nav__bar{  
+    position: absolute; 
+    top: 0; 
+    padding: 2rem; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+/* .mobileNav_menu{ 
+    position: absolute; 
+    z-index: 5; 
+    top: 70%; 
+    left: 50%; 
+    /* display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;  }*/
 
 /*text container styles*/
 .text__container{  
@@ -241,6 +253,33 @@ footer .socials{
     
     }
 
+    .menu__toggle{ 
+        display: none; 
+    }
+
+    /*nav bar styles*/
+.nav__bar{ 
+    position: absolute; 
+    top: 0; 
+    padding: 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    
+}
+
+.nav__menu{ 
+    display: flex;  
+    justify-content: space-evenly;
+    gap: 3.5rem; 
+    list-style: none; 
+}
+
+.nav__link a{ 
+    text-decoration: none; 
+    font-family: var(--ff-body); 
+    color: var(--clr-white);
+}
 
 }
 
