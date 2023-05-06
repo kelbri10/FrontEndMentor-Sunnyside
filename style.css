@@ -6,6 +6,7 @@
     --clr-yellow: hsl(51, 100%, 49%); 
     --clr-darkcyan: hsl(167, 40%, 24%); 
     --clr-darkblue: hsl(198, 62%, 26%); 
+    --clr-lightcyan: hsl(164, 46%, 75%); 
     --clr-medcyan: hsl(168, 34%, 41%); 
 
     /* neutral colors */
@@ -45,12 +46,8 @@ body{
 }
 
 .nav__bar > .desktopNav__menu{ 
-    visibility: hidden; 
+    visibility: hidden;  
     position: absolute; 
-    /* display: none;  */
-    display: flex; 
-    width: 50%; 
-    margin-top: 2rem;  
 }
 
 .header__container h1{ 
@@ -74,6 +71,9 @@ body{
 }
 
 /*mobile nav bar styling*/
+.header__logo{ 
+    color: white; 
+}
 
 .nav__bar > .mobileNav__menu{ 
     list-style: none; 
@@ -132,6 +132,32 @@ body{
 .text__container a{ 
     font-family: var(--ff-heading); 
     text-transform: uppercase; 
+    color: var(--clr-graydarkblue); 
+    text-decoration: none; 
+
+    position: relative; 
+}
+
+.text__container a::before{ 
+    content: ""; 
+    display: block; 
+    border-radius: 10px; 
+    opacity: 0.3; 
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 150px; 
+    /* height: 14px; */
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.transform__text a::before{ 
+    border-bottom: 10px solid var(--clr-yellow); 
+}
+
+.stand-out__text a::before{ 
+    border-bottom: 10px solid var(--clr-softred);
 }
 
 /*transform and standout text container styles */
@@ -159,6 +185,19 @@ body{
     width: 269px;      
 }
 
+.graphic__container h2{ 
+    color: var(--clr-darkcyan); 
+}
+.graphic__container .text__container{ 
+    color: var(--clr-darkcyan); 
+}
+.photography__container h2{ 
+    color: var(--clr-darkblue); 
+}
+.photography__container .text__container{ 
+    color: var(--clr-darkblue); 
+}
+
 /*review containers */
 .client__wrapper{ 
     padding: 2rem; 
@@ -171,6 +210,7 @@ body{
     text-transform: uppercase; 
     letter-spacing: 0.3rem; 
     text-align: center; 
+    color: var(--clr-lghtgrayblue); 
 }
 
 .review__container{ 
@@ -188,10 +228,12 @@ body{
 
 .review__text, .review__role{ 
     font-family: var(--ff-body); 
+    color: var(--clr-lghtgrayblue); 
 }
 
 .review__author{ 
     font-family: var(--ff-heading); 
+    color: var(--clr-graydarkblue); 
 }
 
 .review__text{
@@ -213,11 +255,12 @@ footer{
     align-items: center; 
     gap: var(--padding); 
     
-    background-color: var(--clr-medcyan); 
+    background-color: var(--clr-lightcyan); 
 }
 
-footer > img{ 
+.footer__logo{ 
     padding-top: var(--padding); 
+    color: transparent;  
 }
 .footer__nav ul{ 
     list-style: none; 
@@ -229,16 +272,17 @@ footer > img{
 .footer__nav ul > li > a{ 
     text-decoration: none; 
     font-family: var(--ff-body); 
+    color: var(--clr-medcyan); 
 }
 
 footer .socials{ 
+    color: var(--clr-medcyan);
     padding-bottom: var(--padding);
     display: flex; 
     justify-content: space-between;
     gap: 2rem; 
 }
 
-/*possibly needs to be 830px, needs margin adjustment and left aligned at larger screen sizes*/
 @media only screen and (min-width: 720px){ 
      .section__grid{ 
         display: grid; 
@@ -255,7 +299,7 @@ footer .socials{
 
     .primary__section{ 
         padding: 0; 
-    
+        max-width: 500px; 
     }
 
     .menu__toggle{ 
@@ -279,9 +323,15 @@ footer .socials{
 }
 .nav__bar > .desktopNav__menu{  
     visibility: visible;
+
     position: absolute; 
     top: 0; 
     right: 0; 
+
+    width: 50%; 
+    margin-top: 2rem;
+
+    display: flex;
     flex-direction: row; 
     justify-content: space-around; 
     list-style: none; 
