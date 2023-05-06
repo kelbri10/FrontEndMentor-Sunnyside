@@ -112,6 +112,7 @@ body{
     padding: 1rem 2rem; 
     border-radius: 25px;
 }
+
 .nav__bar{  
     position: absolute; 
     top: 0; 
@@ -343,7 +344,7 @@ footer .socials{
 
     display: flex;
     flex-direction: row; 
-    justify-content: space-around; 
+    justify-content: space-evenly;
     list-style: none; 
     background-color: transparent;
 }
@@ -352,6 +353,15 @@ footer .socials{
     text-decoration: none; 
     font-family: var(--ff-body); 
     color: var(--clr-white);
+}
+
+.desktopNav__menu > .contact__link a{ 
+    background-color: var(--clr-white);
+    color: var(--clr-graydarkblue); 
+    font-family: var(--ff-heading);
+    text-transform: uppercase;
+    padding: 1rem 1.5rem; 
+    border-radius: 25px;
 }
 
 }
