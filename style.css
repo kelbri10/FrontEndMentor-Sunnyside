@@ -146,9 +146,8 @@ body{
 
     position: absolute;
     left: 50%;
-    bottom: 0;
-    width: 150px; 
-    /* height: 14px; */
+    bottom: -5%;
+    width: 130px; 
     transform: translateX(-50%);
     z-index: -1;
 }
