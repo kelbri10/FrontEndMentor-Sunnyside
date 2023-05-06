@@ -26,7 +26,7 @@
     --ff-body: var(--ff-primary);  
     --ff-heading: var(--ff-secondary); 
 }
-body{ 
+.section__grid, .client__wrapper{ 
    max-width: 1440px; 
    margin: 0 auto; 
 }
@@ -318,11 +318,10 @@ footer .socials{
     }
 
 /*nav bar styles*/
-.nav__bar{ 
+.nav__bar{  
     position: absolute; 
     top: 0;  
-    padding: 2rem; 
-    /* transform: translateY(-20%);  */
+    /* padding: 2rem;  */
     right: 0; 
     display: flex; 
     justify-content: space-between; 
@@ -337,14 +336,14 @@ footer .socials{
 
     position: absolute; 
     top: 0; 
-    right: 0; 
+    right: 2rem; 
 
     width: 50%; 
     margin-top: 2rem;
 
     display: flex;
     flex-direction: row; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none; 
     background-color: transparent;
 }
